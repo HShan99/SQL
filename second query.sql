@@ -82,4 +82,23 @@ SELECT * FROM customer WHERE address <> 'Anytown';
 SELECT * FROM product WHERE price > 100;
 
 -- >= operator
+-- in that scenarios first use where clause and secondly use other things 
 select * FROM product WHERE price >=50 ORDER BY price;
+
+-- < operator
+SELECT * FROM product WHERE stock_quantity < 40;
+
+-- <= operator 
+SELECT * FROM product WHERE price <= 200;
+
+-- Between operator
+SELECT * FROM product WHERE stock_quantity BETWEEN 20 AND 50 ORDER BY price;
+
+SELECT * FROM product WHERE price BETWEEN 100 AND 300;
+
+-- IS NULL key word
+-- use for check to null the column
+SELECT * FROM product WHERE description IS NULL;
+
+-- IS NOT NULL
+SELECT * FROM product WHERE description IS NOT NULL;
