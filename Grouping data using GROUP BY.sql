@@ -20,3 +20,5 @@ SELECT product_name, price, COUNT(*) FROM product GROUP BY product_name,price;
 
 SELECT product_name, COUNT(*) FROM product GROUP BY product_name ORDER BY price;
   
+
+  
